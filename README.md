@@ -2,8 +2,8 @@
 A .wav file player made in C#
 
 ### Changelog
-- Added open file diagloge
+- Added Handling for InvalidOperationException and ArgumentException
 
 ### Todo
-- Add Exception handling
-- Actually finish code
+- Improve UI
+- Cleanup and optimise
