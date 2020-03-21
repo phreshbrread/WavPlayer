@@ -14,7 +14,6 @@ namespace WavPlayer
     public partial class Player : Form
     {
         string fileName;
-        SoundPlayer sound = new SoundPlayer(fileName);
 
         public Player()
         {
@@ -37,6 +36,7 @@ namespace WavPlayer
         {
             try
             {
+                SoundPlayer sound = new SoundPlayer(fileName);
                 sound.Play();
             }
             catch (InvalidOperationException)
@@ -44,13 +44,24 @@ namespace WavPlayer
                 MessageBox.Show("File is corrupt or invalid");
                 return;
             }
+            catch (ArgumentException)
+            {
+
+            }
             
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
-            SoundPlayer sound = new SoundPlayer(fileName);
-            sound.Stop();
+            try
+            {
+                SoundPlayer sound = new SoundPlayer(fileName);
+                sound.Stop();
+            }
+            catch (ArgumentException)
+            {
+
+            }
         }
     }
 }
