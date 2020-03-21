@@ -5,4 +5,5 @@ A .wav file player made in C#
 - Added open file diagloge
 
 ### Todo
+- Add Exception handling
 - Actually finish code
