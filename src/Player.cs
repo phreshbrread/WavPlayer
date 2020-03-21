@@ -34,7 +34,7 @@ namespace WavPlayer
             }
             catch (InvalidOperationException)
             {
-                MessageBox.Show("File is corrupt or invalid");
+                MessageBox.Show("Invalid path or corrupted file");
                 return;
             }
             catch (ArgumentException)
