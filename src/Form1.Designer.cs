@@ -70,6 +70,7 @@
             resources.ApplyResources(this.PauseButton, "PauseButton");
             this.PauseButton.Name = "PauseButton";
             this.PauseButton.UseVisualStyleBackColor = true;
+            this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
             // 
             // Player
             // 
