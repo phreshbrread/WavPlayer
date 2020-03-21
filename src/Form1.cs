@@ -29,7 +29,7 @@ namespace WavPlayer
             OpenFile.ShowDialog();
 
             fileName = OpenFile.FileName;
-            ChosenFileText.Text = fileName;
+            FilePath.Text = fileName;
         }
 
         public void PlayButton_Click(object sender, EventArgs e)

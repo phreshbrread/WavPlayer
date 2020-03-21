@@ -35,6 +35,7 @@
             this.FilePathText = new System.Windows.Forms.Label();
             this.PlayButton = new System.Windows.Forms.Button();
             this.PauseButton = new System.Windows.Forms.Button();
+            this.FilePath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ChooseFile
@@ -72,10 +73,16 @@
             this.PauseButton.UseVisualStyleBackColor = true;
             this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
             // 
+            // FilePath
+            // 
+            resources.ApplyResources(this.FilePath, "FilePath");
+            this.FilePath.Name = "FilePath";
+            // 
             // Player
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.FilePath);
             this.Controls.Add(this.PauseButton);
             this.Controls.Add(this.PlayButton);
             this.Controls.Add(this.FilePathText);
@@ -96,6 +103,7 @@
         private System.Windows.Forms.Label FilePathText;
         private System.Windows.Forms.Button PlayButton;
         private System.Windows.Forms.Button PauseButton;
+        private System.Windows.Forms.TextBox FilePath;
     }
 }
 
