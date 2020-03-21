@@ -13,6 +13,9 @@ namespace WavPlayer
 {
     public partial class Player : Form
     {
+        string fileName;
+        SoundPlayer sound = new SoundPlayer(fileName);
+
         public Player()
         {
             InitializeComponent();
@@ -20,22 +23,34 @@ namespace WavPlayer
 
         public void ChooseFile_Click(object sender, EventArgs e)
         {
-            OpenFile.InitialDirectory = @"C:\";
             OpenFile.RestoreDirectory = true;
             OpenFile.FileName = "";
             OpenFile.Title = "Open .wav file";
             OpenFile.Filter = "wav files (*.wav)|*.wav";
             OpenFile.ShowDialog();
 
-            string fileName = OpenFile.FileName;
-
+            fileName = OpenFile.FileName;
             ChosenFileText.Text = fileName;
         }
 
         public void PlayButton_Click(object sender, EventArgs e)
         {
-            SoundPlayer sound = new SoundPlayer();
-            sound.Play();
+            try
+            {
+                sound.Play();
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("File is corrupt or invalid");
+                return;
+            }
+            
+        }
+
+        private void PauseButton_Click(object sender, EventArgs e)
+        {
+            SoundPlayer sound = new SoundPlayer(fileName);
+            sound.Stop();
         }
     }
 }
