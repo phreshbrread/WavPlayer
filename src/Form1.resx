@@ -125,7 +125,7 @@
     <value>12, 210</value>
   </data>
   <data name="ChooseFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>760, 83</value>
+    <value>759, 83</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ChooseFile.TabIndex" type="System.Int32, mscorlib">
@@ -144,36 +144,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ChooseFile.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ChosenFileText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ChosenFileText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
-  </data>
-  <data name="ChosenFileText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
-  </data>
-  <data name="ChosenFileText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 25</value>
-  </data>
-  <data name="ChosenFileText.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ChosenFileText.Text" xml:space="preserve">
-    <value>Nothing Currently Selected</value>
-  </data>
-  <data name="&gt;&gt;ChosenFileText.Name" xml:space="preserve">
-    <value>ChosenFileText</value>
-  </data>
-  <data name="&gt;&gt;ChosenFileText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChosenFileText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ChosenFileText.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <metadata name="OpenFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -186,7 +156,7 @@
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="FilePathText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+    <value>7, 9</value>
   </data>
   <data name="FilePathText.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 25</value>
@@ -220,7 +190,7 @@
     <value>12, 121</value>
   </data>
   <data name="PlayButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 83</value>
+    <value>377, 83</value>
   </data>
   <data name="PlayButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -240,47 +210,50 @@
   <data name="&gt;&gt;PlayButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PauseButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="StopButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="PauseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="StopButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PauseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 121</value>
+  <data name="StopButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 121</value>
   </data>
-  <data name="PauseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 83</value>
+  <data name="StopButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 83</value>
   </data>
-  <data name="PauseButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="StopButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="PauseButton.Text" xml:space="preserve">
-    <value>Pause</value>
+  <data name="StopButton.Text" xml:space="preserve">
+    <value>Stop</value>
   </data>
-  <data name="&gt;&gt;PauseButton.Name" xml:space="preserve">
-    <value>PauseButton</value>
+  <data name="&gt;&gt;StopButton.Name" xml:space="preserve">
+    <value>StopButton</value>
   </data>
-  <data name="&gt;&gt;PauseButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;StopButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PauseButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;StopButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PauseButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;StopButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="FilePath.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
+    <value>Consolas, 15pt</value>
   </data>
   <data name="FilePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
+    <value>12, 37</value>
   </data>
   <data name="FilePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>760, 30</value>
+    <value>759, 31</value>
   </data>
   <data name="FilePath.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="FilePath.Text" xml:space="preserve">
+    <value>No file currently selected</value>
   </data>
   <data name="&gt;&gt;FilePath.Name" xml:space="preserve">
     <value>FilePath</value>
@@ -301,7 +274,7 @@
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>784, 305</value>
+    <value>783, 305</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Player</value>

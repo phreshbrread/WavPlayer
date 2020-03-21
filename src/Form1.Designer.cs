@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Player));
             this.ChooseFile = new System.Windows.Forms.Button();
-            this.ChosenFileText = new System.Windows.Forms.Label();
             this.OpenFile = new System.Windows.Forms.OpenFileDialog();
             this.FilePathText = new System.Windows.Forms.Label();
             this.PlayButton = new System.Windows.Forms.Button();
-            this.PauseButton = new System.Windows.Forms.Button();
+            this.StopButton = new System.Windows.Forms.Button();
             this.FilePath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -44,11 +43,6 @@
             this.ChooseFile.Name = "ChooseFile";
             this.ChooseFile.UseVisualStyleBackColor = true;
             this.ChooseFile.Click += new System.EventHandler(this.ChooseFile_Click);
-            // 
-            // ChosenFileText
-            // 
-            resources.ApplyResources(this.ChosenFileText, "ChosenFileText");
-            this.ChosenFileText.Name = "ChosenFileText";
             // 
             // OpenFile
             // 
@@ -66,12 +60,12 @@
             this.PlayButton.UseVisualStyleBackColor = true;
             this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
-            // PauseButton
+            // StopButton
             // 
-            resources.ApplyResources(this.PauseButton, "PauseButton");
-            this.PauseButton.Name = "PauseButton";
-            this.PauseButton.UseVisualStyleBackColor = true;
-            this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
+            resources.ApplyResources(this.StopButton, "StopButton");
+            this.StopButton.Name = "StopButton";
+            this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // FilePath
             // 
@@ -83,10 +77,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.FilePath);
-            this.Controls.Add(this.PauseButton);
+            this.Controls.Add(this.StopButton);
             this.Controls.Add(this.PlayButton);
             this.Controls.Add(this.FilePathText);
-            this.Controls.Add(this.ChosenFileText);
             this.Controls.Add(this.ChooseFile);
             this.KeyPreview = true;
             this.Name = "Player";
@@ -98,11 +91,10 @@
         #endregion
 
         private System.Windows.Forms.Button ChooseFile;
-        private System.Windows.Forms.Label ChosenFileText;
         private System.Windows.Forms.OpenFileDialog OpenFile;
         private System.Windows.Forms.Label FilePathText;
         private System.Windows.Forms.Button PlayButton;
-        private System.Windows.Forms.Button PauseButton;
+        private System.Windows.Forms.Button StopButton;
         private System.Windows.Forms.TextBox FilePath;
     }
 }
